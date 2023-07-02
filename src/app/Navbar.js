@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex-auto">
           <ul className='flex'>
             <li><MenuLink label="My work" location="/my-work" /></li>
-            <li><MenuLink label="Projects" location="projects" /></li>
+            <li><MenuLink label="Projects" location="/dashboard/projects" /></li>
             {/* <li><button>Create</button></li> */}
           </ul>
         </div>
