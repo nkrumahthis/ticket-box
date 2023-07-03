@@ -7,7 +7,7 @@ export default function Navbar() {
         <span className='flex-none mr-8'><MenuLink label="Ticket-box" location="/"/></span>
         <div className="flex-auto">
           <ul className='flex'>
-            <li><MenuLink label="My work" location="/my-work" /></li>
+            <li><MenuLink label="My work" location="/dashboard/my-work" /></li>
             <li><MenuLink label="Projects" location="/dashboard/projects" /></li>
             {/* <li><button>Create</button></li> */}
           </ul>

@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
-import Navbar from '../Navbar'
+import Menubar from '../Menubar'
 
 export default function layout({ children }) {
   return (
     <div className="m-0 p-0">
-      <Navbar />
+      <Menubar />
       <div>{children}</div>
     </div>
   )
