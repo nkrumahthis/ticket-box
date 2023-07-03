@@ -1,3 +1,4 @@
+import PrimaryLink from '@/app/PrimaryLink';
 import prisma from '@/lib/prisma'
 import Link from 'next/link'
 import React from 'react'
@@ -12,7 +13,7 @@ export default async function Page() {
     <div>
       <div className="flex justify-between container mx-auto p-8 w-3/4">
         <h1 className="text-2xl">Projects</h1>
-        <Link className="bg-blue-800 text-white py-2 px-3 rounded text-m" href={"dashboard/projects/create"}>Create</Link>
+        <PrimaryLink location="/dashboard/projects/create" label="Create Project" />
       </div>
       <div className="border-t-4 border-blue-500">
         <table className="table-auto w-3/4 mt-4 mx-auto p-3 text-left">
@@ -26,7 +27,7 @@ export default async function Page() {
             {
               projects.map((row, index) => (
                 <tr key={index} className="table-row hover:bg-slate-800 p-3">
-                  <Link className="text-blue-400 hover:underline" href={"projects/" + row.id}><td className="table-cell p-4">{row.name}</td></Link>
+                  <Link className="text-blue-400 hover:underline" href={"/dashboard/projects/" + row.id}><td className="table-cell p-4">{row.name}</td></Link>
                   <td className="table-cell p-4">{row.owner.name}</td>
                 </tr>
               ))
