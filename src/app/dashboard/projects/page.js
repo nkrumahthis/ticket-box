@@ -15,9 +15,9 @@ export default async function Page() {
         <h1 className="text-2xl">Projects</h1>
         <PrimaryLink location="/dashboard/projects/create" label="Create Project" />
       </div>
-      <div className="border-t-4 border-blue-500">
+      <div className="">
         <table className="table-auto w-3/4 mt-4 mx-auto p-3 text-left">
-          <thead className="table-header-group border-b">
+          <thead className="table-header-group border-b border-b-slate-600">
             <tr className="table-row">
               <th className="table-cell p-5">Name</th>
               <th className="table-cell p-5">Owner</th>

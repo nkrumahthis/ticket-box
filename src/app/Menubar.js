@@ -4,7 +4,7 @@ import PrimaryLink from './PrimaryLink';
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between p-4 mb-2 dark:bg-gray-900'>
+    <nav className='flex justify-between p-4 mb-2 border-b border-b-slate-600'>
       <span className='flex-none mr-8'><MenuLink label="Ticket-box" location="/" /></span>
       <div className="flex-auto">
         <ul className='flex'>
