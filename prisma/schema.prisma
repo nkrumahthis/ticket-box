@@ -23,6 +23,7 @@ model Ticket {
     assignee   User     @relation("AssignedTickets", fields: [assigneeId], references: [id])
     children   Ticket[] @relation("ParentChild")
     parent     Ticket?  @relation("ParentChild", fields: [parentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+    stars      Int
 
     @@index(assigneeId)
     @@index(reporterId)
